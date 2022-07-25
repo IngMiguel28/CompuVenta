@@ -25,7 +25,7 @@ Paginas creadas usando wordpress desde 0 desde el hosting
 
 https://aselus.mx/
 https://abogadospenales.mx/
-https://qshop.com.mx/
+https://qshop.com.mx/ ----> Conexion Api para actualizar inventario y precio
 https://videology.com.mx/
 https://ri.maxcom.com/ y su intranet
 https://iktanet.com/
