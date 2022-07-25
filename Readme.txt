@@ -17,5 +17,7 @@ Correo de Contacto
 Nivel
  Basico 
 
+Agrege un desarrollo que se realizo para un cliente usando conecxiones web service usando PHP cargando datos de un producto se pueden hacer solo de un SKU o hasta 300 productos
 
+Envio la pagina en productivo donde esta implementado el sistema https://tzila.mx/
 
