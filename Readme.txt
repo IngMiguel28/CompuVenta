@@ -21,3 +21,14 @@ Agrege un desarrollo que se realizo para un cliente usando conecxiones web servi
 
 Envio la pagina en productivo donde esta implementado el sistema https://tzila.mx/
 
+Paginas creadas usando wordpress desde 0 desde el hosting
+
+https://aselus.mx/
+https://abogadospenales.mx/
+https://qshop.com.mx/
+https://videology.com.mx/
+https://ri.maxcom.com/ y su intranet
+https://iktanet.com/
+https://charlytours.com.mx/
+https://www.segurosguerrero.com/
+
