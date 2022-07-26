@@ -1,33 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tienda</title>
-    <link rel="stylesheet" href="css/estilos.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
-    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-    <script defer src="Js/funtions.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script defer src="Js/funtions.js"></script>
 </head>
 <body>
-    <nav>
-        <input type="checkbox" id="check">
-        <label for="check" class="checkbtn">
-            <i class="fas fa-bars"></i>
-        </label>
-        <a href="#" class="enlace">
-            <img src="Images/logoMR.webp" alt="" class="logo">
-        </a>
-        <ul>
-            <li><a class="active" href="#">Inicio</a></li>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Nosotros</a></li>
-            <li><a href="#">Tienda</a></li>
-            <li><a href="#">Contacto</a></li>
-        </ul>
-    </nav>
-      <section id="container-slider"> 
+ <div class="navbar">
+    <div class="container flex">
+      <h1 class="logo">MR Computo</h1>
+        <nav>
+            <ul>
+              <li class="nav"><a class="outline" href="">Log in</a></li>
+              <li class="nav"><a href="" class="outline">Tienda</a></li>
+              <li class="nav"><a href="" class="outline">Contacto</a></li>
+            </ul>
+        </nav>
+    </div>
+  </div>
+  <section id="container-slider"> 
         <a href="javascript: fntExecuteSlide('prev');" class="arrowPrev"><i class="fas fa-chevron-circle-left"></i></a>
         <a href="javascript: fntExecuteSlide('next');" class="arrowNext"><i class="fas fa-chevron-circle-right"></i></a>
         <ul class="listslider">
@@ -36,40 +32,132 @@
           <li><a itlist="itList_2" href="#"></a></li>
         </ul>
         <ul id="slider">
-          <li style="background-image: url('https://cdn.pixabay.com/photo/2020/04/15/11/20/telework-5046230_1280.jpg'); z-index:0; opacity: 1;">
+          <li style="background-image: url('https://cwsmgmt.corsair.com/hybris/tlc/cases/bg-hero-5000T-hydrox.png'); z-index:0; opacity: 1;">
             <div class="content_slider" >
               <div>
-                <h2>Emprendimiento empresarial</h2>
-                <p>Descubra en qué consiste el emprendimiento empresarial por medio de 5 estrategias fundamentales.</p>
+                <h2>Completa tu Setup Gamer</h2>
+                <p>Compra tu PC Gamer con nostros y llevate un 20% en tu ensamble</p>
                 <a href="#" class="btnSlider">Ver más</a>
               </div>
             </div>
           </li>
-          <li style="background-image: url('https://cdn.pixabay.com/photo/2018/02/20/10/28/business-3167295_960_720.jpg'); ">
+          <li style="background-image: url('https://cwsmgmt.corsair.com/hybris/tlc/cases/tlc_banner_cases_5000x_ql.jpg'); ">
             <div class="content_slider" >
               <div>
-                <h2>Negocios</h2>
-                <p>Recursos, guías, herramientas y consejos para emprender, crear tu empresa o iniciar un negocio exitoso</p>
+                <h2>Gabinetes</h2>
+                <p>Tenemos la mejor seleccion de gabinetes del mercado, conocenos</p>
                 <a href="#" class="btnSlider">Ver más</a>
               </div>
             </div>
           </li>
-          <li style="background-image: url('https://cdn.pixabay.com/photo/2015/07/17/22/42/typing-849806_960_720.jpg'); ">
+          <li style="background-image: url('https://cwsmgmt.corsair.com/hybris/tlc/keyboards/images/tlc_keyboards_banner_k70promini.jpg'); ">
             <div class="content_slider" >
               <div>
-                <h2>Estrategias de negocio</h2>
-                  <p>Las estrategias de negocio representan planes o métodos...</p>
+                <h2>Perifericos Gamer</h2>
+                  <p>Tenemos una increible seleccion de teclados gamer para tu PC</p>
                   <a href="#" class="btnSlider">Ver más</a>
                 </div>
             </div>
           </li>
         </ul>
+  </section>
+  <section class="showcase">
+        <div class="container">
+            <div class="grid">
+              <div class="grid-item-1">
+                <div class="showcase-text">
+                  <h1>Arma tu PC, nosotros te ayudamos</h1>
+                  <p class="supporting-text"> Contamos con mas de 1000 tiendas</p>
+                </div>
+                <div class="showcase-form">
+                  <form action="">
+                    <input type="email" placeholder="correo electrónico">
+                    <input type="submit" class="btn" value="Enviar">
+                  </form>
+                  <p class="little-info">Envianos un correo y te asesoramos.</p>
+                </div>
+              </div>
+
+              <div class="grid-item-2">
+                <div class="image">
+                  <img src="images/elite-1.png" alt="">
+                </div>
+              </div>
+           </div>
+        </div>
     </section>
-    <section>
-      <div class="row">
-        <div class="col-6">...</div> <!-- 25% -->
-        <div class="col-6">...</div> <!-- 25% -->
+    <div class="lower-container container">
+      <section class="stats">
+        <div class="flex">
+          <div class="stat">
+            <i><img src="images/FotoG1.webp" alt=""></i>
+            <h3 class="title">Equipos y componentes</h3>
+            <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+            <a href="#" class="btnSlider">Comprar</a>
+          </div>
+          <div class="stat">
+            <i><img src="images/Teclado.jpg" alt=""></i>
+            <h3 class="title">Perifericos y accesesorios</h3>
+            <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+            <a href="#" class="btnSlider">Comprar</a>
+          </div>
+          <div class="stat">
+            <i><img src="images/Monitor.jpg" alt=""></i>
+            <h3 class="title">Monitoes y equipos de video</h3>
+            <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+            <a href="#" class="btnSlider">Comprar</a>
+          </div>
+        </div>
+      </section>
+    </div>
+    <section class="shop">
+      <h3>Proceso de compra</h3>
+      <div class="container">
+        <div class="shop grid-3">
+          <div class="card">
+            <div class="circle">
+              <img src="Images/select.png" alt="">
+            </div>
+            <h3>Escoger</h3>
+            <p>Primer slecciona tus productos favoritos o los que necesites dependiendo de tus necesiadades</p>
+          </div>
+          <div class="card">
+            <div class="circle">
+              <img src="Images/pagar.png" alt="">
+            </div>
+            <h3>Pedir</h3>
+            <p>Realiza tu compra atraves de este sitio web, es facil, rapido y sin complicaciones</p>
+          </div>
+          <div class="card">
+            <div class="circle">
+              <img src="Images/construir.png" alt="">
+            </div>
+            <h3>Ensamblar</h3>
+            <p>Nosotros ensamblamos tu PC y la enviamos directo a tu casa, usamos envios seguros con paqueterias confiables</p>
+          </div>
+        </div>
       </div>
     </section>
+    <footer>
+      <div class="container grid-3">
+        <div class="copyright">
+          <h1>MR Computo</h1>
+          <p>Copyright &copy; 2022</p>
+        </div>
+        <nav class="links">
+          <ul>
+            <li><a href="" class="outline">Inicio</a></li>
+            <li><a href="" class="outline">Tienda</a></li>
+            <li><a href="" class="outline">Categorias</a></li>
+          </ul>
+        </nav>
+        <div class="profiles">
+          <a href=""><em class="fab fa-twitter fa-2x"></em></a>
+          <a href=""><em class="fab fa-instagram fa-2x"></em></a>
+          <a href=""><em class="fab fa-facebook fa-2x"></em></a>
+          <a href=""><em class="fab fa-whatsapp fa-2x"></em></a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
