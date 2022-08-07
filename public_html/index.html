@@ -1,262 +1,588 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
-  <link rel="stylesheet" href="CSS/estilos.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
-  crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <script defer src="Js/funtions.js"></script>
-</head>
-<body>
- <div class="navbar">
-    <div class="container flex">
-      <h1 class="logo">MR Computo</h1>
-        <nav>
-            <ul>
-              <li class="nav"><a class="outline" href="">Log in</a></li>
-              <li class="nav"><a href="" class="outline">Tienda</a></li>
-              <li class="nav"><a href="" class="outline">Categorias</a>
-                <!--<ul>
-                  <li><a href="">Promociones</a></li>
-                  <li><a href="">Gabientes</a></li>
-                  <li><a href="">Monitores</a></li>
-                  <li><a href="">Perifericos</a></li>
-                  <li><a href="">Fuentes de Poder</a></li>
-                  <li><a href="">Laptops</a></li>
-                </ul>-->
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MComputo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/js/bootstrap.bundle.min.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css">
+  </head>
+  <body>
+<!-- Inicio de Navegador-->    
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="Images/logoMR.webp" alt="logoMR" width="100" height="45">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
               </li>
-              <li class="nav"><a href="" class="outline">Contacto</a></li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Nosotros</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Categorias
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Productos Destacados</a></li>
+                  <li><a class="dropdown-item" href="#">Mas Vendidos</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Lanzamientos</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Contacto</a>
+              </li>
             </ul>
-        </nav>
-        <div class="box">
-        <div class="container-1">
-          <span class="icon"><i class="fa fa-search"></i></span>
-          <input type="search" id="search" placeholder="Buscar..." />
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Escribe aqui ..." aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Buscar</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+<!--Fin del Navegador-->
+<!--Inicio del carrusel-->      
+      <section>
+        <div id="carouselPr" class="carousel slide carousel-fade" data-bs-ride="true">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselPr" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselPr" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselPr" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="https://www.asus.com/WebsitesBanner/MX/banners/afb7mhsntdkaae0l/afb7mhsntdkaae0l-0_0_desktop_1X.jpg?webp" class="d-block w-100" alt="">
+            </div>
+            <div class="carousel-item">
+              <img src="https://www.asus.com/WebsitesBanner/MX/banners/ailjk2av8t2jxusl/ailjk2av8t2jxusl-0_0_desktop_0_1X.jpg?webp" class="d-block w-100" alt="">
+            </div>
+            <div class="carousel-item">
+              <img src="https://www.asus.com/WebsitesBanner/MX/banners/jws7m66xigqjd2px/jws7m66xigqjd2px-0_0_desktop_1X.jpg" class="d-block w-100" alt="">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselPr" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselPr" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
+      </div>
+    </section>
+<!-- Fin del Carrusel-->
+<!--Productos Destacados-->    
+    <section>
+      <div class="container mt-5 mb-5">
+        <div class="row g-1">
+          <div class="text-bg-dark p-3"><h2>Productos Destacados <span class="badge text-bg-secondary">New</span></h2></div>
+            <div class="col-md-4">
+                <div class="p-card">                  
+                    <div class="p-carousel">
+                      <div id="carousel-1" class="carousel slide carousel-fade" data-bs-ride="true">
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#carousel-1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#carousel-1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#carousel-1" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="https://qshop.com.mx/wp-content/uploads/2022/05/2730_1.jpg" class="d-block w-100" alt="">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="https://qshop.com.mx/wp-content/uploads/2022/05/2730_3.jpg" class="d-block w-100" alt="">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="https://qshop.com.mx/wp-content/uploads/2022/05/2730_4.jpg" class="d-block w-100" alt="">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carousel-1" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">anterior</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carousel-1" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Siguiente</span>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="p-details bg-dark">
+                        <div class="d-flex justify-content-between align-items-center mx-2">
+                            <h5>Gigabyte AERO 17 KE5</h5><span>$50,200</span></div>
+                        <div class="mx-2">
+                            <hr class="line">
+                        </div>
+                        <div class="d-flex justify-content-between mt-2 spec mx-2">
+                            <div class="d-flex flex-column align-items-center">
+                                <h6 class="mb-0">RAM</h6><span>16GB</span></div>
+                            <div class="d-flex flex-column align-items-center">
+                                <h6 class="mb-0">SSD</h6><span>2000GB</span></div>
+                            <div class="d-flex flex-column align-items-center">
+                                <h6 class="mb-0">CPU</h6><span>2.3 GHZ</span></div>
+                        </div>
+                        <div class="buy mt-3"><button class="btn btn-primary btn-block" type="button">Comprar</button></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="p-card">
+                    <div class="p-carousel">
+                      <div id="carousel-2" class="carousel slide carousel-fade" data-bs-ride="true">
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#carousel-2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#carousel-2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#carousel-2" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="https://qshop.com.mx/wp-content/uploads/2022/03/XENIAXE15TI7G11GXELX-SGCMX.jpg" class="d-block w-100" alt="">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="https://qshop.com.mx/wp-content/uploads/2022/03/2520_2.jpg" class="d-block w-100" alt="">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="https://qshop.com.mx/wp-content/uploads/2022/03/2520_4.png" class="d-block w-100" alt="">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carousel-2" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">anterior</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carousel-2" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Siguiente</span>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="p-details bg-dark">
+                        <div class="d-flex justify-content-between align-items-center mx-2">
+                            <h5>XPG Xenia 15</h5><span>$17,950</span></div>
+                        <div class="mx-2">
+                            <hr class="line">
+                        </div>
+                        <div class="d-flex justify-content-between mt-2 spec mx-2">
+                            <div class="d-flex flex-column align-items-center">
+                                <h6 class="mb-0">RAM</h6><span>8GB</span></div>
+                            <div class="d-flex flex-column align-items-center">
+                                <h6 class="mb-0">SSD</h6><span>1000GB</span></div>
+                            <div class="d-flex flex-column align-items-center">
+                                <h6 class="mb-0">CPU</h6><span>2.4 GHZ</span></div>
+                        </div>
+                        <div class="buy mt-3"><button class="btn btn-primary btn-block" type="button">Comprar</button></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="p-card">
+                    <div class="p-carousel">
+                      <div id="carousel-3" class="carousel slide carousel-fade" data-bs-ride="true">
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#carousel-3" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#carousel-3" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#carousel-3" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="https://qshop.com.mx/wp-content/uploads/2022/03/2423_2-1.jpg" class="d-block w-100" alt="">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="https://qshop.com.mx/wp-content/uploads/2022/03/2423_3-1.jpg" class="d-block w-100" alt="">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="https://qshop.com.mx/wp-content/uploads/2022/03/2423_4-1.jpg" class="d-block w-100" alt="">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carousel-3" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">anterior</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carousel-3" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Siguiente</span>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="p-details bg-dark">
+                        <div class="d-flex justify-content-between align-items-center mx-2">
+                            <h5>XPG Xenia Xe</h5><span>$23,500</span></div>
+                        <div class="mx-2">
+                            <hr class="line">
+                        </div>
+                        <div class="d-flex justify-content-between mt-2 spec mx-2">
+                            <div class="d-flex flex-column align-items-center">
+                                <h6 class="mb-0">RAM</h6><span>16GB</span></div>
+                            <div class="d-flex flex-column align-items-center">
+                                <h6 class="mb-0">SSD</h6><span>512GB</span></div>
+                            <div class="d-flex flex-column align-items-center">
+                                <h6 class="mb-0">CPU</h6><span>2.8 GHZ</span></div>
+                        </div>
+                        <div class="buy mt-3"><button class="btn btn-primary btn-block" type="button">Comprar</button></div>
+                    </div>
+                </div>
+            </div>
         </div>
       </div>
-    </div>
-  </div>
-  <section id="container-slider"> 
-        <a href="javascript: fntExecuteSlide('prev');" class="arrowPrev"><i class="fas fa-chevron-circle-left"></i></a>
-        <a href="javascript: fntExecuteSlide('next');" class="arrowNext"><i class="fas fa-chevron-circle-right"></i></a>
-        <ul class="listslider">
-          <li><a itlist="itList_0" href="#" class="item-select-slid"></a></li>
-          <li><a itlist="itList_1" href="#"></a></li>
-          <li><a itlist="itList_2" href="#"></a></li>
-        </ul>
-        <ul id="slider">
-          <li style="background-image: url('https://cwsmgmt.corsair.com/hybris/tlc/cases/bg-hero-5000T-hydrox.png'); z-index:0; opacity: 1;">
-            <div class="content_slider" >
-              <div>
-                <h2>Completa tu Setup Gamer</h2>
-                <p>Compra tu PC Gamer con nostros y llevate un 20% en tu ensamble</p>
-                <a href="#" class="btnSlider">Ver más</a>
+    </section>
+<!--Fin de productos destacados-->
+<!--Separador de secciones-->    
+    <section>
+      <div class="p-5 bg-dark text-white text-center">
+        <h1>Somos los mejores</h1>
+        <p>La mayor varidad de equipos de computo en el mercado</p> 
+      </div>
+    </section>
+<!--Fin del separadir de secciones-->
+<!--Menu de productos-->
+    <section>
+      <div class="m-4">
+        <div class="card text-center">
+          <div class="card-header">
+            <ul class="nav nav-tabs card-header-tabs" id="myTab">
+                <li class="nav-item">
+                    <a href="#todos" class="nav-link active" data-bs-toggle="tab">Todos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#profile" class="nav-link" data-bs-toggle="tab">Destacados</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#messages" class="nav-link" data-bs-toggle="tab">Mas vendidos</a>
+                </li>
+            </ul>
+        </div>
+        <div class="card-body">
+            <div class="tab-content">
+                <div class="tab-pane fade show active" id="todos">
+                  <div class="card-group">
+                    <div class="card">
+                      <img src="https://qshop.com.mx/wp-content/uploads/2022/07/2873_1.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">FireCuda</h5>
+                        <p class="card-text">Disco Duro Externo Seagate FireCuda 2 TB 2.5 USB 3.0 Edición Star Wars Boba Fett Multicolor</p>
+                        <h4 class="text-bg-danger">$2,336.31</h4>
+                      </div>
+                      <div class="card-footer">
+                        <a href="#" class="btn btn-primary">Comprar</a>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <img src="https://qshop.com.mx/wp-content/uploads/2022/06/812_1-600x600.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Helios</h5>
+                        <p class="card-text">Gabinte Asus Helios White Edition C/Ventana Vidrio Templado M/Torre EATX S/Fuen USB-C Blanco RGB</p>
+                        <h4 class="text-bg-danger">$7,086.21</h4>
+                      </div>
+                      <div class="card-footer">
+                        <a href="#" class="btn btn-primary">Comprar</a>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <img src="https://qshop.com.mx/wp-content/uploads/2022/06/2757_1.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Cooler Master</h5>
+                        <p class="card-text">Monitor Cooler Master Curvo Gamer GM34-CW 34P Quad HD 3440 X1440 1MS 144Hz 2 HDMI</p>
+                        <h4 class="text-bg-danger">$14,141.16</h4>
+                      </div>
+                      <div class="card-footer">
+                        <a href="#" class="btn btn-primary">Comprar</a>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <img src="https://qshop.com.mx/wp-content/uploads/2021/10/1174_4.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">MasterBox</h5>
+                        <p class="card-text">Gabinete Cooler Master MasterBox Q300L C/VNA. Minitorre M-ATX/M-ITX S/Fuente USB3.0</p>
+                        <h4 class="text-bg-danger">$1,149.36</h4>
+                      </div>
+                      <div class="card-footer">
+                        <a href="#" class="btn btn-primary">Comprar</a>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <img src="https://qshop.com.mx/wp-content/uploads/2022/08/2658_1.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">GeForce GT 730</h5>
+                        <p class="card-text">Tarjeta de Video Gigabyte Nvidia GeForce GT 730 2 GB DDR 5 1 HDMI 1 DPORT PCIe 2.0</p>
+                        <h4 class="text-bg-danger">$1,564.86</h4>
+                      </div>
+                      <div class="card-footer">
+                        <a href="#" class="btn btn-primary">Comprar</a>
+                      </div>
+                    </div>                                   
+                  </div>
+                  <div class="card-group">
+                    <div class="card">
+                      <img src="https://qshop.com.mx/wp-content/uploads/2022/08/1683_1.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">ASUS RTN300</h5>
+                        <p class="card-text">Router Inalambrico ASUS RTN300 300MBPS LAN 4Puertos 802.11X 2 Antenas</p>
+                        <h4 class="text-bg-danger">$280.67</h4>
+                      </div>
+                      <div class="card-footer">
+                        <a href="#" class="btn btn-primary">Comprar</a>
+                      </div>
+                    </div>  
+                    <div class="card">
+                      <img src="https://qshop.com.mx/wp-content/uploads/2022/03/1605_1.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">XPG D60</h5>
+                        <p class="card-text">Memoria RAM Adata XPG D60 DIMM 8 GB DDR4 3200 MHz 1X8 CL16 1.35V RGB</p>
+                        <h4 class="text-bg-danger">$768.72</h4>
+                      </div>
+                      <div class="card-footer">
+                        <a href="#" class="btn btn-primary">Comprar</a>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <img src="https://qshop.com.mx/wp-content/uploads/2022/03/1622_1.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">XPG GAMMIX D10</h5>
+                        <p class="card-text">Memoria RAM Adata XPG GAMMIX D10 DIMM 8GB DDR4 3200MHZ1X8 CL14 1.35V Rojo</p>
+                        <h4 class="text-bg-danger">$544.72</h4>
+                      </div>
+                      <div class="card-footer">
+                        <a href="#" class="btn btn-primary">Comprar</a>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <img src="https://qshop.com.mx/wp-content/uploads/2022/03/797_1-1-600x600.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Adata SU630</h5>
+                        <p class="card-text">SSD Interno Adata SU630 960 GB 2.5 SATA III 520/450 MB/s para Laptop</p>
+                        <h4 class="text-bg-danger">$1,336.45</h4>
+                      </div>
+                      <div class="card-footer">
+                        <a href="#" class="btn btn-primary">Comprar</a>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <img src="https://qshop.com.mx/wp-content/uploads/2022/03/52_2-1-768x768.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">XPG GAMMIX S11</h5>
+                        <p class="card-text">SSD Interno Adata XPG GAMMIX S11 PRO 256 GB M.2 2280 PCIE GEN 3X4 3500/3000 MB/s</p>
+                        <h4 class="text-bg-danger">$906.25</h4>
+                      </div>
+                      <div class="card-footer">
+                        <a href="#" class="btn btn-primary">Comprar</a>
+                      </div>
+                    </div>                                   
+                  </div>                
+                </div>
+              <div class="tab-pane fade" id="profile">
+                  <div class="card-group">
+                    <div class="card">
+                      <img src="https://qshop.com.mx/wp-content/uploads/2022/07/2873_1.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">FireCuda</h5>
+                        <p class="card-text">Disco Duro Externo Seagate FireCuda 2 TB 2.5 USB 3.0 Edición Star Wars Boba Fett Multicolor</p>
+                        <h4 class="text-bg-danger">$2,336.31</h4>
+                      </div>
+                      <div class="card-footer">
+                        <a href="#" class="btn btn-primary">Comprar</a>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <img src="https://qshop.com.mx/wp-content/uploads/2022/06/812_1-600x600.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Helios</h5>
+                        <p class="card-text">Gabinte Asus Helios White Edition C/Ventana Vidrio Templado M/Torre EATX S/Fuen USB-C Blanco RGB</p>
+                        <h4 class="text-bg-danger">$7,086.21</h4>
+                      </div>
+                      <div class="card-footer">
+                        <a href="#" class="btn btn-primary">Comprar</a>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <img src="https://qshop.com.mx/wp-content/uploads/2022/06/2757_1.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Cooler Master</h5>
+                        <p class="card-text">Monitor Cooler Master Curvo Gamer GM34-CW 34P Quad HD 3440 X1440 1MS 144Hz 2 HDMI</p>
+                        <h4 class="text-bg-danger">$14,141.16</h4>
+                      </div>
+                      <div class="card-footer">
+                        <a href="#" class="btn btn-primary">Comprar</a>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <img src="https://qshop.com.mx/wp-content/uploads/2021/10/1174_4.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">MasterBox</h5>
+                        <p class="card-text">Gabinete Cooler Master MasterBox Q300L C/VNA. Minitorre M-ATX/M-ITX S/Fuente USB3.0</p>
+                        <h4 class="text-bg-danger">$1,149.36</h4>
+                      </div>
+                      <div class="card-footer">
+                        <a href="#" class="btn btn-primary">Comprar</a>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <img src="https://qshop.com.mx/wp-content/uploads/2022/08/2658_1.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">GeForce GT 730</h5>
+                        <p class="card-text">Tarjeta de Video Gigabyte Nvidia GeForce GT 730 2 GB DDR 5 1 HDMI 1 DPORT PCIe 2.0</p>
+                        <h4 class="text-bg-danger">$1,564.86</h4>
+                      </div>
+                      <div class="card-footer">
+                        <a href="#" class="btn btn-primary">Comprar</a>
+                      </div>
+                    </div>                                   
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="messages">
+                  <div class="card-group">
+                    <div class="card">
+                      <img src="https://qshop.com.mx/wp-content/uploads/2022/08/1683_1.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">ASUS RTN300</h5>
+                        <p class="card-text">Router Inalambrico ASUS RTN300 300MBPS LAN 4Puertos 802.11X 2 Antenas</p>
+                        <h4 class="text-bg-danger">$280.67</h4>
+                      </div>
+                      <div class="card-footer">
+                        <a href="#" class="btn btn-primary">Comprar</a>
+                      </div>
+                    </div>  
+                    <div class="card">
+                      <img src="https://qshop.com.mx/wp-content/uploads/2022/03/1605_1.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">XPG D60</h5>
+                        <p class="card-text">Memoria RAM Adata XPG D60 DIMM 8 GB DDR4 3200 MHz 1X8 CL16 1.35V RGB</p>
+                        <h4 class="text-bg-danger">$768.72</h4>
+                      </div>
+                      <div class="card-footer">
+                        <a href="#" class="btn btn-primary">Comprar</a>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <img src="https://qshop.com.mx/wp-content/uploads/2022/03/1622_1.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">XPG GAMMIX D10</h5>
+                        <p class="card-text">Memoria RAM Adata XPG GAMMIX D10 DIMM 8GB DDR4 3200MHZ1X8 CL14 1.35V Rojo</p>
+                        <h4 class="text-bg-danger">$544.72</h4>
+                      </div>
+                      <div class="card-footer">
+                        <a href="#" class="btn btn-primary">Comprar</a>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <img src="https://qshop.com.mx/wp-content/uploads/2022/03/797_1-1-600x600.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Adata SU630</h5>
+                        <p class="card-text">SSD Interno Adata SU630 960 GB 2.5 SATA III 520/450 MB/s para Laptop</p>
+                        <h4 class="text-bg-danger">$1,336.45</h4>
+                      </div>
+                      <div class="card-footer">
+                        <a href="#" class="btn btn-primary">Comprar</a>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <img src="https://qshop.com.mx/wp-content/uploads/2022/03/52_2-1-768x768.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">XPG GAMMIX S11</h5>
+                        <p class="card-text">SSD Interno Adata XPG GAMMIX S11 PRO 256 GB M.2 2280 PCIE GEN 3X4 3500/3000 MB/s</p>
+                        <h4 class="text-bg-danger">$906.25</h4>
+                      </div>
+                      <div class="card-footer">
+                        <a href="#" class="btn btn-primary">Comprar</a>
+                      </div>
+                    </div>                  
+                  </div>
+                </div>
               </div>
             </div>
-          </li>
-          <li style="background-image: url('https://cwsmgmt.corsair.com/hybris/tlc/cases/tlc_banner_cases_5000x_ql.jpg'); ">
-            <div class="content_slider" >
-              <div>
-                <h2>Gabinetes</h2>
-                <p>Tenemos la mejor seleccion de gabinetes del mercado, conocenos</p>
-                <a href="#" class="btnSlider">Ver más</a>
-              </div>
-            </div>
-          </li>
-          <li style="background-image: url('https://cwsmgmt.corsair.com/hybris/tlc/keyboards/images/tlc_keyboards_banner_k70promini.jpg'); ">
-            <div class="content_slider" >
-              <div>
-                <h2>Perifericos Gamer</h2>
-                  <p>Tenemos una increible seleccion de teclados gamer para tu PC</p>
-                  <a href="#" class="btnSlider">Ver más</a>
+          </div>
+        </section>
+<!--Fin de menu de productos-->
+<!--Pie de la pagina-->        
+        <section class="bg-dark text-white">
+          <div class="container">
+            <footer class="py-5">
+              <div class="row">
+                <div class="col-6 col-md-2 mb-3">
+                  <h5>Menu</h5>
+                  <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Inicio</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Tienda</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Nosotros</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Preguntas</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Contacto</a></li>
+                  </ul>
                 </div>
-            </div>
-          </li>
-        </ul>
-  </section>
-  <section class="showcase">
-        <div class="container">
-            <div class="grid">
-              <div class="grid-item-1">
-                <div class="showcase-text">
-                  <h1>Arma tu PC, nosotros te ayudamos</h1>
-                  <p class="supporting-text"> Contamos con mas de 1000 tiendas</p>
+                <div class="col-6 col-md-2 mb-3">
+                  <h5>Politicas</h5>
+                  <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Privacidad</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Terminos y condiciones</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Uso del sitio</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Site Map</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Devoluciones</a></li>
+                  </ul>
                 </div>
-                <div class="showcase-form">
-                  <form action="">
-                    <input type="email" placeholder="correo electrónico">
-                    <input type="submit" class="btn" value="Enviar">
+                <div class="col-6 col-md-2 mb-3">
+                  <h5>Categorias</h5>
+                  <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Perifericos</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Laptops</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Componentes</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Redes</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Video</a></li>
+                  </ul>
+                </div>
+                <div class="col-md-5 offset-md-1 mb-3">
+                  <form>
+                    <h5>Suscriberte a nuestro newsletter</h5>
+                    <p>Enterate cada mes de nuestras promociones</p>
+                    <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                      <label for="newsletter1" class="visually-hidden">Email</label>
+                      <input id="newsletter1" type="text" class="form-control" placeholder="Tu email aqui...">
+                      <button class="btn btn-primary" type="button">Suscribete</button>
+                    </div>
                   </form>
-                  <p class="little-info">Envianos un correo y te asesoramos.</p>
                 </div>
               </div>
-
-              <div class="grid-item-2">
-                <div class="image">
-                  <img src="images/elite-1.png" alt="">
-                </div>
+              <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+                <p>&copy; 2022 MR Computo, Co. Todos los derechos reservados.</p>
+                <ul class="list-unstyled d-flex">
+                  <li class="ms-3">
+                    <button type="button" class="btn btn-primary">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                        <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                      </svg>
+                      Twitter
+                    </button>
+                  </li>
+                  <li class="ms-3">
+                    <button type="button" class="btn btn-primary">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                        <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                      </svg>
+                      Facebook
+                    </button>
+                  </li>
+                  <li class="ms-3">
+                    <button type="button" class="btn btn-primary">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitch" viewBox="0 0 16 16">
+                        <path d="M3.857 0 1 2.857v10.286h3.429V16l2.857-2.857H9.57L14.714 8V0H3.857zm9.714 7.429-2.285 2.285H9l-2 2v-2H4.429V1.143h9.142v6.286z"/>
+                        <path d="M11.857 3.143h-1.143V6.57h1.143V3.143zm-3.143 0H7.571V6.57h1.143V3.143z"/>
+                      </svg>
+                      Twitch
+                    </button>
+                  </li>                  
+                </ul>
               </div>
-           </div>
-        </div>
-    </section>
-    <div class="lower-container container">
-      <section class="stats">
-        <div class="flex">
-          <div class="stat">
-            <i><img src="images/FotoG1.webp" alt=""></i>
-            <h3 class="title">Equipos y componentes</h3>
-            <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-            <a href="#" class="btnSlider">Comprar</a>
-          </div>
-          <div class="stat">
-            <i><img src="images/Teclado.jpg" alt=""></i>
-            <h3 class="title">Perifericos y accesesorios</h3>
-            <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-            <a href="#" class="btnSlider">Comprar</a>
-          </div>
-          <div class="stat">
-            <i><img src="images/Monitor.jpg" alt=""></i>
-            <h3 class="title">Monitoes y equipos de video</h3>
-            <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-            <a href="#" class="btnSlider">Comprar</a>
+            </footer>
           </div>
         </div>
       </section>
-    </div>
-    <div class="shop-container container">
-      <section class="stats">
-        <h1>Productos Destacados</h1>
-        <div class="flex">
-          <div class="stat">
-            <i><img src="images/FotoG1.webp" alt=""></i>
-            <h3 class="title">Equipos y componentes</h3>
-            <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-            <a href="#" class="btnSlider">Comprar</a>
-          </div>
-          <div class="stat">
-            <i><img src="images/Teclado.jpg" alt=""></i>
-            <h3 class="title">Perifericos y accesesorios</h3>
-            <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
-            <a href="#" class="btnSlider">Comprar</a>
-          </div>
-          <div class="stat">
-            <i><img src="images/Monitor.jpg" alt=""></i>
-            <h3 class="title">Monitoes y equipos de video</h3>
-            <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
-            <a href="#" class="btnSlider">Comprar</a>
-          </div>
-          <div class="stat">
-            <i><img src="images/Monitor.jpg" alt=""></i>
-            <h3 class="title">Monitoes y equipos de video</h3>
-            <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
-            <a href="#" class="btnSlider">Comprar</a>
-          </div>
-        </div>
-                <div class="flex">
-          <div class="stat">
-            <i><img src="images/FotoG1.webp" alt=""></i>
-            <h3 class="title">Equipos y componentes</h3>
-            <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-            <a href="#" class="btnSlider">Comprar</a>
-          </div>
-          <div class="stat">
-            <i><img src="images/Teclado.jpg" alt=""></i>
-            <h3 class="title">Perifericos y accesesorios</h3>
-            <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
-            <a href="#" class="btnSlider">Comprar</a>
-          </div>
-          <div class="stat">
-            <i><img src="images/Monitor.jpg" alt=""></i>
-            <h3 class="title">Monitoes y equipos de video</h3>
-            <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
-            <a href="#" class="btnSlider">Comprar</a>
-          </div>
-          <div class="stat">
-            <i><img src="images/Monitor.jpg" alt=""></i>
-            <h3 class="title">Monitoes y equipos de video</h3>
-            <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
-            <a href="#" class="btnSlider">Comprar</a>
-          </div>
-        </div>
-                <div class="flex">
-          <div class="stat">
-            <i><img src="images/FotoG1.webp" alt=""></i>
-            <h3 class="title">Equipos y componentes</h3>
-            <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-            <a href="#" class="btnSlider">Comprar</a>
-          </div>
-          <div class="stat">
-            <i><img src="images/Teclado.jpg" alt=""></i>
-            <h3 class="title">Perifericos y accesesorios</h3>
-            <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
-            <a href="#" class="btnSlider">Comprar</a>
-          </div>
-          <div class="stat">
-            <i><img src="images/Monitor.jpg" alt=""></i>
-            <h3 class="title">Monitoes y equipos de video</h3>
-            <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
-            <a href="#" class="btnSlider">Comprar</a>
-          </div>
-          <div class="stat">
-            <i><img src="images/Monitor.jpg" alt=""></i>
-            <h3 class="title">Monitoes y equipos de video</h3>
-            <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
-            <a href="#" class="btnSlider">Comprar</a>
-          </div>
-        </div>
-      </section>
-    </div>
-    <section class="shop">
-      <h3>Proceso de compra</h3>
-      <div class="container">
-        <div class="shop grid-3">
-          <div class="card">
-            <div class="circle">
-              <img src="Images/select.png" alt="">
-            </div>
-            <h3>Escoger</h3>
-            <p>Primer slecciona tus productos favoritos o los que necesites dependiendo de tus necesiadades</p>
-          </div>
-          <div class="card">
-            <div class="circle">
-              <img src="Images/pagar.png" alt="">
-            </div>
-            <h3>Pedir</h3>
-            <p>Realiza tu compra atraves de este sitio web, es facil, rapido y sin complicaciones</p>
-          </div>
-          <div class="card">
-            <div class="circle">
-              <img src="Images/construir.png" alt="">
-            </div>
-            <h3>Ensamblar</h3>
-            <p>Nosotros ensamblamos tu PC y la enviamos directo a tu casa, usamos envios seguros con paqueterias confiables</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <footer>
-      <div class="container grid-3">
-        <div class="copyright">
-          <h1>MR Computo</h1>
-          <p>Copyright &copy; 2022</p>
-        </div>
-        <nav class="links">
-          <ul>
-            <li><a href="" class="outline">Inicio</a></li>
-            <li><a href="" class="outline">Tienda</a></li>
-            <li><a href="" class="outline">Categorias</a></li>
-          </ul>
-        </nav>
-        <div class="profiles">
-          <a href=""><em class="fab fa-twitter fa-2x"></em></a>
-          <a href=""><em class="fab fa-instagram fa-2x"></em></a>
-          <a href=""><em class="fab fa-facebook fa-2x"></em></a>
-          <a href=""><em class="fab fa-whatsapp fa-2x"></em></a>
-        </div>
-      </div>
-    </footer>
+<!--Fin del pie de la pagina-->        
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
   </body>
 </html>
