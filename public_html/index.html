@@ -15,7 +15,7 @@
 <!-- Inicio de Navegador-->    
     <nav class="navbar navbar-expand-lg bg-light">
       <div class="container-fluid">
-          <a class="navbar-brand" href="#">
+          <a class="navbar-brand" href="http://localhost/public_html/">
             <img src="Images/logoMR.webp" alt="logoMR" width="100" height="45">
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -24,7 +24,7 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                <a class="nav-link active" aria-current="page" href="http://localhost/public_html/">Inicio</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#">Nosotros</a>
@@ -34,10 +34,10 @@
                   Categorias
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Productos Destacados</a></li>
-                  <li><a class="dropdown-item" href="#">Mas Vendidos</a></li>
+                  <li><a class="dropdown-item" href="http://localhost/public_html/shop.html">Productos Destacados</a></li>
+                  <li><a class="dropdown-item" href="http://localhost/public_html/shop.html">Mas Vendidos</a></li>
                   <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Lanzamientos</a></li>
+                  <li><a class="dropdown-item" href="http://localhost/public_html/shop.html">Lanzamientos</a></li>
                 </ul>
               </li>
               <li class="nav-item">
@@ -46,7 +46,7 @@
             </ul>
             <form class="d-flex" role="search">
               <input class="form-control me-2" type="search" placeholder="Escribe aqui ..." aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Buscar</button>
+              <button class="btn btn-danger" role="button" data-bs-toggle="button" type="submit">Buscar</button>
             </form>
           </div>
         </div>
@@ -86,8 +86,10 @@
     <section>
       <div class="container mt-5 mb-5">
         <div class="row g-1">
-          <div class="text-bg-dark p-3"><h2>Productos Destacados <span class="badge text-bg-secondary">New</span></h2></div>
-            <div class="col-md-4">
+          <div class="text-bg-dark p-3" style="  border-top-left-radius: 8px; border-top-right-radius: 8px;"><h2>Productos Destacados 
+            <span class="badge text-bg-secondary">New</span></h2>
+          </div>
+            <div class="col-md-4"> 
                 <div class="p-card">                  
                     <div class="p-carousel">
                       <div id="carousel-1" class="carousel slide carousel-fade" data-bs-ride="true">
@@ -119,7 +121,7 @@
                     </div>
                     <div class="p-details bg-dark">
                         <div class="d-flex justify-content-between align-items-center mx-2">
-                            <h5>Gigabyte AERO 17 KE5</h5><span>$50,200</span></div>
+                            <h5>AERO 17 KE5</h5><span>$50,200</span></div>
                         <div class="mx-2">
                             <hr class="line">
                         </div>
@@ -131,7 +133,9 @@
                             <div class="d-flex flex-column align-items-center">
                                 <h6 class="mb-0">CPU</h6><span>2.3 GHZ</span></div>
                         </div>
-                        <div class="buy mt-3"><button class="btn btn-primary btn-block" type="button">Comprar</button></div>
+                        <div class="buy mt-3">
+                          <a href="http://localhost/public_html/product.html" class="btn btn-danger btn-block" type="button">Comprar</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -179,7 +183,9 @@
                             <div class="d-flex flex-column align-items-center">
                                 <h6 class="mb-0">CPU</h6><span>2.4 GHZ</span></div>
                         </div>
-                        <div class="buy mt-3"><button class="btn btn-primary btn-block" type="button">Comprar</button></div>
+                        <div class="buy mt-3">
+                          <a href="http://localhost/public_html/product.html" class="btn btn-danger btn-block" type="button">Comprar</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -227,7 +233,9 @@
                             <div class="d-flex flex-column align-items-center">
                                 <h6 class="mb-0">CPU</h6><span>2.8 GHZ</span></div>
                         </div>
-                        <div class="buy mt-3"><button class="btn btn-primary btn-block" type="button">Comprar</button></div>
+                        <div class="buy mt-3">
+                          <a href="http://localhost/public_html/product.html" class="btn btn-danger btn-block" type="button">Comprar</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -237,7 +245,7 @@
 <!--Fin de productos destacados-->
 <!--Separador de secciones-->    
     <section>
-      <div class="p-5 bg-dark text-white text-center">
+      <div class="p-5 bg-dark text-white text-center" style="background-image: url(Images/Gamer.jpeg);background-attachment: fixed;">
         <h1>Somos los mejores</h1>
         <p>La mayor varidad de equipos de computo en el mercado</p> 
       </div>
@@ -247,16 +255,16 @@
     <section>
       <div class="m-4">
         <div class="card text-center">
-          <div class="card-header">
+          <div class="card-header bg-dark">
             <ul class="nav nav-tabs card-header-tabs" id="myTab">
                 <li class="nav-item">
-                    <a href="#todos" class="nav-link active" data-bs-toggle="tab">Todos</a>
+                    <a href="#todos" class="nav-link active" data-bs-toggle="tab" style="color: crimson;">Todos</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#profile" class="nav-link" data-bs-toggle="tab">Destacados</a>
+                    <a href="#profile" class="nav-link" data-bs-toggle="tab" style="color: crimson;">Destacados</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#messages" class="nav-link" data-bs-toggle="tab">Mas vendidos</a>
+                    <a href="#messages" class="nav-link" data-bs-toggle="tab" style="color: crimson;">Mas vendidos</a>
                 </li>
             </ul>
         </div>
